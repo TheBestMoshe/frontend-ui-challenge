@@ -9,15 +9,11 @@ export default function HomePage() {
   }, []);
 
   async function getData() {
-    console.log('getting data');
-
     const response = await fetch(
       'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
     );
 
     setData(await response.json());
-
-    console.log('data', await response.json());
   }
 
   return (

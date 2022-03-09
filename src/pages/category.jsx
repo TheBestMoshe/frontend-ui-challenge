@@ -20,8 +20,6 @@ export default function Category() {
     setData(await response.json());
   }
 
-  console.log({ searchParams });
-
   return (
     <div>
       <h1>{searchParams.get('c')}</h1>
